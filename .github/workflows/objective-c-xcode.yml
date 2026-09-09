@@ -20,7 +20,7 @@ jobs:
   # ---------------------------------------------------------------------------
   build-macos:
     name: Build & analyze (macOS)
-    runs-on: [self-hosted, manzanita-image-qualification]
+    runs-on: [self-hosted, manzanita-xcode-26.2]
     timeout-minutes: 40
     steps:
       - name: Checkout
@@ -89,7 +89,7 @@ jobs:
   # ---------------------------------------------------------------------------
   build-and-test-ios:
     name: Build, analyze & test (iOS)
-    runs-on: [self-hosted, manzanita-image-qualification]
+    runs-on: [self-hosted, manzanita-xcode-26.2]
     timeout-minutes: 40
     steps:
       - name: Checkout
